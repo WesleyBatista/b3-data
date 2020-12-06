@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "b3-data"
+version = "0.1.0"
+description = "Download quote data from b3.com.br"
+authors = ["Wesley Batista"]
+license = "MIT"
+
+[tool.poetry.dependencies]
+python = "^3.7"
+click = "^7.1.2"
+requests = "^2.25.0"
+
+[tool.poetry.dev-dependencies]
+
+[tool.poetry.scripts]
+b3-data = "b3_data.main:cli"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
