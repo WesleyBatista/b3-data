@@ -21,13 +21,18 @@ pip install b3-data
 
 ## Usage
 
-```shell
+Download the latest file from their api:
+
+```
 $ b3-data download
 downloading https://arquivos.b3.com.br/apinegocios/tickercsv/2020-12-05 to 2020-12-05.zip
+```
 
-# OR
 
-$ b3-data download 2020-12-04
+Download specific date:
+
+```
+$ b3-data download --date 2020-12-04
 downloading https://arquivos.b3.com.br/apinegocios/tickercsv/2020-12-04 to 2020-12-04.zip
 ```
 
