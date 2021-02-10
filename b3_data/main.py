@@ -17,7 +17,7 @@ def download(date, chunk_size):
         import subprocess
         date = subprocess.getoutput("""echo $(curl --silent 'https://arquivos.b3.com.br/apinegocios/dates') | sed -e 's/"//g' -e 's/\[//g' -e 's/\]//g' | cut -d"," -f 1""")
     else:
-        date = str(date.today())
+        date = str(date)
 
     from b3_data import download
     download.download_tickercsv(date, chunk_size)
