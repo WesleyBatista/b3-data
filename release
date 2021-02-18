@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+
+set -e
+poetry version $1
+version=$(poetry version -s)
+git commit -m "bump $1 release v${version}" pyproject.toml
+git tag -f v${version}
+git push --set-upstream --follow-tags
+gh release create v${version} --notes='' --title=v${version}
