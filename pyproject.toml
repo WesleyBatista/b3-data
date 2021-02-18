@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "b3-data"
-version = "0.2.2"
+version = "0.2.3"
 description = "Download quote data from b3.com.br"
 authors = ["Wesley Batista"]
 license = "MIT"
